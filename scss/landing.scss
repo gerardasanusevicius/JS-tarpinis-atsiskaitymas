@@ -1,0 +1,111 @@
+.landing {
+  background: url("/img/citybackground.png");
+  max-width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 72px;
+
+  .overlaycontainer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(28, 28, 28, 0.63);
+    max-width: 100%;
+    height: 100vh;
+    padding: 200px 50px 200px 50px;
+  }
+
+  .left {
+    width: 40%;
+
+    button {
+      background: none;
+      border: 3px solid white;
+      color: white;
+      width: 135px;
+      height: 42px;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+      }
+    }
+  }
+
+  .right {
+    width: 360px;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    h2 {
+      background-color: #f5f5f5;
+      height: 57px;
+      text-align: center;
+      padding-top: 20px;
+
+      span {
+        color: $orange-color;
+      }
+    }
+
+    // form {
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: space-between;
+    // }
+
+    h3 {
+      font-size: 16px;
+      padding: 20px 0px 0px 50px;
+    }
+
+    input {
+      display: block;
+      border: none;
+      border-bottom: 1px solid lightgrey;
+      margin: 20px 0px 10px 50px;
+
+      &:focus {
+        outline: none;
+        border-bottom: 2px solid black;
+      }
+    }
+
+    input[type="radio"] {
+      display: inline;
+    }
+
+    label {
+      font-size: 9px;
+      text-transform: uppercase;
+    }
+
+    button {
+      border: none;
+      background-color: $green-color;
+      width: 100%;
+      height: 57px;
+      margin-top: 56.5px;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
