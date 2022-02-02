@@ -1,0 +1,117 @@
+#pricing {
+  background-color: #6696e2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  #title {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      padding-bottom: 20px;
+      font-size: 40px;
+      color: white;
+    }
+
+    hr {
+      background-color: $green-color;
+      border: none;
+      height: 2px;
+      width: 15%;
+    }
+
+    p {
+      padding-top: 20px;
+      font-size: 16px;
+      color: white;
+    }
+  }
+
+  #options {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+
+    .option {
+      width: 20%;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      overflow: hidden;
+      width: 360px;
+      margin: 50px;
+
+      .top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #333333;
+        color: white;
+
+        h4 {
+          padding-top: 10px;
+          font-size: 20px;
+        }
+
+        .price {
+          display: flex;
+
+          h2 {
+            font-size: 94px;
+            font-weight: normal;
+          }
+
+          h3 {
+            font-size: 36px;
+            line-height: 150px;
+          }
+        }
+
+        p {
+          padding-bottom: 20px;
+          color: #86878b;
+        }
+      }
+
+      .mid {
+        text-align: center;
+        background-color: $green-color;
+        padding-bottom: 2.5px;
+        padding-top: 2.5px;
+        color: white;
+        font-size: 14px;
+      }
+
+      .bot {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+        color: #86878b;
+        font-size: 14px;
+
+        p {
+          padding-bottom: 10px;
+          padding-top: 10px;
+        }
+      }
+
+      &:nth-child(2) .mid {
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+    }
+  }
+}

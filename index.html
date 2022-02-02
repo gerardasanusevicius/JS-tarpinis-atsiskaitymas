@@ -18,31 +18,199 @@
     <a href="#">Contact</a>
     </div>
   </header>
-  <section class="landing">
+  <section id="landing">
     <div class="overlaycontainer">
       <div class="left">
     <img src="img/cheshiresvg.svg" alt="logo">
       <h1>Explained propriety of out perpetual to you</h1>
       <hr>
-      <p>Inspidity the sufficient discretion imprudence resolution sir him decisevely. Proceed how any enganged visitor. Explained properiety of out perpertual his you. Feel sold off felt nay rose met you. WE so entreaties cultivated astonished is.</p>
+      <p>Inspidity the sufficient discretion imprudence resolution sir him decisevely.<br> Proceed how any enganged visitor. Explained properiety of out perpertual his you.<br> Feel sold off felt nay rose met you. WE so entreaties cultivated astonished is.</p>
       <button>DOWNLOAD</button>
       </div>
       <div class="right">
+      <form action="/action_page.php" method="get">
         <h2>Try Your <span> FREE </span> Trial Today</h2>
-      <form>
         <h3>Your details</h3>
         <input type="text" name ="fname" id="fname" placeholder="First Name" required>
         <input type="text" name ="lname" id="lname" placeholder="Last Name" required>
         <input type="tel" name ="phone" id="phone" placeholder="Phone number" required>
         <h3>Type of subscription</h3>
+        <div class="radio">
         <input type="radio" name="subscription" id="monthly" value="monthly">
         <label for="monthly">Monthly</label>
         <input type="radio" name="subscription" id="yearly" value="yearly">
         <label for="yearly">Yearly</label>
-        <button>GET STARTED</button>
+        </div>
+        <button type="submit" value="Submit">GET STARTED</button>
       </form>
       </div>
     </div>
-  </section>  
+  </section>
+  <section id="socmedia1">
+    <div id="soctext">
+    <h2>Social Media</h2>
+    <p> 
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+      Aenean euismod bibendum laoreet.
+    </p>
+    </div>
+      <a href="#" target="_blank"><img src="/img/facebook-logo.svg" alt="fb"></a>
+      <a href="#" target="_blank"><img src="/img/instagram-logo.svg" alt="insta"></a>
+      <a href="#" target="_blank"><img src="/img/twitter.svg" alt="twit"></a>
+      <a href="#" target="_blank"><img src="/img/pinterest.svg" alt="pint"></a>
+      <a href="#" class="fa fa-rss" target="_blank"></a>
+  </section>
+  <section id="tabsection">
+    <div id="tabs">
+      <button class="buttontab" onclick="changeContent(0, 'pirmas')"><p>Register</p></button>
+      <button class="buttontab" onclick="changeContent(1, 'antras')"><p>Apply</p></button>
+      <button class="buttontab" onclick="changeContent(2, 'trecias')"><p>Receive</p></button>
+    </div>
+    <article id="pirmas" class="content">
+      <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum culpa earum ex doloremque, perferendis
+        possimus id numquam minima excepturi consequuntur, ipsum veniam quibusdam aliquid quam? Rerum culpa nam atque
+        veritatis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo possimus architecto, dolor rerum, fugiat id ducimus praesentium sit quisquam, dolore laudantium enim ratione voluptatibus! Natus sapiente ipsa est ad quae.</p>
+    </article>
+    <article id="antras" class="content">
+      <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, asperiores eum. Nulla, error corrupti! Doloremque, consequatur rem tenetur asperiores accusantium hic soluta eaque quia inventore, quis suscipit debitis quam in?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo possimus architecto, dolor rerum, fugiat id ducimus praesentium sit quisquam, dolore laudantium enim ratione voluptatibus! Natus sapiente ipsa est ad quae.</p>
+    </article>
+    <article id="trecias" class="content">
+        <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, rerum et dolorem excepturi in officia soluta aut voluptate? Cupiditate autem sapiente ex et quos at, necessitatibus quasi modi natus. Omnis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo possimus architecto, dolor rerum, fugiat id ducimus praesentium sit quisquam, dolore laudantium enim ratione voluptatibus! Natus sapiente ipsa est ad quae.</p>
+    </article>
+    <article id="grid">
+      <div class="imgcontainer" id="item-1">
+      <img src="/img/lettuce.png" alt="lettuce">
+      <div class="imgoverlay"><p class="overlaytext">Explore</p></div>
+      </div>
+      <div class="imgcontainer" id="item-2">
+      <img src="/img/veg.png" alt="veg">
+      <div class="imgoverlay"><p class="overlaytext">Explore</p></div>
+      </div>
+      <div class="imgcontainer" id="item-3">
+      <img src="/img/feet.png" alt="feet">
+      <div class="imgoverlay"><p class="overlaytext">Explore</p></div>
+      </div>
+    </article>
+  </section>
+  <section id="thirdpage">
+    <img src="/img/cheshiresvg.svg" alt="cheshire logo">
+    <article id="right">
+      <h2>Erat tempor tempus erat malesuada</h2>
+      <hr>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe perspiciatis sint explicabo recusandae aperiam ut fugiat reiciendis nam id rerum animi molestiae veniam pariatur est, odit doloremque odio! Dolorum, non.</p>
+      <div class="part">
+        <div class="logo"><i class="far fa-eye"></i></div>
+        <div class="text">
+          <h4>Title</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis aliquam maiores itaque porro repellat veritatis enim totam quibusdam vel dolorem ad rerum eaque.</p>
+        </div>
+      </div>
+      <div class="part">
+        <div class="logo"><i class="far fa-comment"></i></div>
+        <div class="text">
+          <h4>Title</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quo. Voluptatem odio dolor quo doloremque repellat officia tempore aperiam harum natus voluptate suscipit ut, at tenetur obcaecati quos numquam ipsa!</p>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section id="awesome">
+    <article id="title">
+      <h2>WHY THIS IS AWESOME</h2>
+      <hr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </article>
+    <article id="points">
+      <div class="point">
+      <div class="logo"><i class="fas fa-award"></i></div>
+      <h3>Thoughtful Design</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolorem inventore beatae eum iusto, temporibus rem earum rerum? </p>
+      </div>
+      <div class="point">
+      <div class="logo"><i class="fas fa-spa"></i></div>
+      <h3>Well Crafted</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolorem inventore beatae eum iusto, temporibus rem earum rerum? </p>
+      </div>
+      <div class="point">
+      <div class="logo"><i class="fab fa-cc-visa"></i></div>
+      <h3>Easy to customize</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolorem inventore beatae eum iusto, temporibus rem earum rerum? </p>
+      </div>
+    </article>
+  </section>
+  <section id="pricing">
+    <article id="title">
+      <h2>PRICING OPTIONS</h2>
+      <hr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </article>
+    <article id="options">
+
+      <div class="option">
+        <div class="top">
+          <h4>Basic</h4>
+            <div class="price">
+          <h3>$</h3><h2>0</h2>
+            </div>
+            <p>Free for Life</p>
+        </div>
+        <div class="mid"></div>
+        <div class="bot">
+          <p>1 GB OF SPACE</p>
+          <p>10 GB OF BANDWIDTH</p>
+          <p>3 WEBSITES</p>
+          <p>BASIC CUSTOMIZATION</p>
+          <p>WORDPRESS INTEGRATION</p>
+          <p>EMAIL SUPPORT</p>
+        </div>
+      </div>
+
+      <div class="option">
+        <div class="top">
+          <h4>Professional</h4>
+            <div class="price">
+          <h3>$</h3><h2>19</h2>
+            </div>
+            <p>Monthly Payment</p>
+        </div>
+        <div class="mid">OUR MOST POPULAR</div>
+        <div class="bot">
+          <p>5 GB OF SPACE</p>
+          <p>50 GB OF BANDWIDTH</p>
+          <p>12 WEBSITES</p>
+          <p>ADVANCED CUSTOMIZATION</p>
+          <p>WORDPRESS INTEGRATION</p>
+          <p>EMAIL SUPPORT</p>
+        </div>
+      </div>
+
+      <div class="option">
+        <div class="top">
+          <h4>Enterprise</h4>
+            <div class="price">
+          <h3>$</h3><h2>70</h2>
+            </div>
+            <p>Monthly Payment</p>
+        </div>
+        <div class="mid"></div>
+        <div class="bot">
+          <p>UNLIMITED SPACE</p>
+          <p>UNLIMITED BANDWIDTH</p>
+          <p>100 WEBSITES</p>
+          <p>ADVANCED CUSTOMIZATION</p>
+          <p>WORDPRESS INTEGRATION</p>
+          <p>24/7 CUSTOMER SUPPORT</p>
+        </div>
+      </div>
+
+    </article>
+  </section>
+
 </body>
 </html>

@@ -1,25 +1,21 @@
-header {
-  width: 100%;
-  height: 72px;
-  background: black;
+#socmedia1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: fixed;
-  top: 0;
-  z-index: 2;
+  background: white;
+  height: 11vh;
+  padding-left: 75px;
+  padding-right: 75px;
 
   h2 {
-    color: white;
+    padding: 2.5px 0 5px 0;
   }
 
   a {
+    color: $orange-color;
     text-decoration: none;
-    color: white;
-    font-size: 17px;
-    margin: 20px;
-    opacity: 0.5;
-    display: inline-block;
+    padding-left: 125px;
+    font-size: 30px;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
@@ -27,13 +23,15 @@ header {
     transition: 0.3s;
 
     &:hover {
-      opacity: 1;
       -webkit-transform: scale(1.2);
       -moz-transform: scale(1.2);
       -ms-transform: scale(1.2);
       -o-transform: scale(1.2);
       transform: scale(1.2);
-      border-bottom: 2px solid $orange-color;
+    }
+
+    &:last-of-type {
+      opacity: 0.75;
     }
   }
 }

@@ -1,7 +1,7 @@
-.landing {
-  background: url("/img/citybackground.png");
+#landing {
+  background: url("../../img/citybackground.png");
   max-width: 100%;
-  height: 100vh;
+  height: 82vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -12,12 +12,35 @@
     justify-content: space-around;
     background-color: rgba(28, 28, 28, 0.63);
     max-width: 100%;
-    height: 100vh;
+    height: 60vh;
     padding: 200px 50px 200px 50px;
   }
 
   .left {
-    width: 40%;
+    color: white;
+
+    img {
+      width: 300px;
+    }
+
+    h1 {
+      font-size: 36px;
+      width: 450px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+    hr {
+      width: 84px;
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-weight: bold;
+      padding-bottom: 25px;
+      line-height: 30px;
+      font-size: 16px;
+    }
 
     button {
       background: none;
@@ -38,8 +61,8 @@
   }
 
   .right {
-    width: 360px;
-    height: 425px;
+    width: 450px;
+    height: 531px;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -50,61 +73,108 @@
     border-radius: 5px;
     overflow: hidden;
 
-    h2 {
-      background-color: #f5f5f5;
-      height: 57px;
-      text-align: center;
-      padding-top: 20px;
+    form {
+      height: 531px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      position: relative;
 
-      span {
-        color: $orange-color;
+      h2 {
+        background-color: #f5f5f5;
+        height: 57px;
+        text-align: center;
+        line-height: 57px;
+
+        span {
+          color: $orange-color;
+        }
       }
-    }
 
-    // form {
-    //   display: flex;
-    //   flex-direction: column;
-    //   justify-content: space-between;
-    // }
-
-    h3 {
-      font-size: 16px;
-      padding: 20px 0px 0px 50px;
-    }
-
-    input {
-      display: block;
-      border: none;
-      border-bottom: 1px solid lightgrey;
-      margin: 20px 0px 10px 50px;
-
-      &:focus {
-        outline: none;
-        border-bottom: 2px solid black;
+      h3 {
+        font-size: 16px;
+        padding: 20px 0px 0px 50px;
       }
-    }
 
-    input[type="radio"] {
-      display: inline;
-    }
+      input {
+        display: block;
+        border: none;
+        border-bottom: 1px solid lightgrey;
+        margin: 20px 50px 10px 50px;
 
-    label {
-      font-size: 9px;
-      text-transform: uppercase;
-    }
+        &:focus {
+          outline: none;
+          border-bottom: 2px solid black;
+        }
+      }
 
-    button {
-      border: none;
-      background-color: $green-color;
-      width: 100%;
-      height: 57px;
-      margin-top: 56.5px;
-      color: white;
-      font-size: 18px;
-      font-weight: bold;
+      .radio {
+        display: flex;
+        align-items: center;
 
-      &:hover {
-        cursor: pointer;
+        input[type="radio"] {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          width: 15px;
+          height: 15px;
+          border: 1.5px solid $green-color;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+
+          position: relative;
+          opacity: 0.5;
+        }
+
+        input[type="radio"]:checked {
+          opacity: 1;
+        }
+
+        input[type="radio"]::before {
+          position: absolute;
+          left: 0.7px;
+          top: 1.35px;
+          content: "";
+          width: 10px;
+          height: 10px;
+          background-color: $green-color;
+          border-radius: 100%;
+          opacity: 0;
+          transition: 1s;
+        }
+
+        input[type="radio"]:last-of-type::before {
+          left: 0.6px;
+        }
+
+        input[type="radio"]:checked::before {
+          opacity: 1;
+        }
+
+        label {
+          font-size: 12px;
+          text-transform: uppercase;
+          font-weight: bold;
+          position: relative;
+          right: 45px;
+          top: 5px;
+        }
+      }
+      button {
+        border: none;
+        background-color: $green-color;
+        width: 100%;
+        height: 57px;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
