@@ -6,23 +6,14 @@
   align-items: center;
   justify-content: space-around;
 
-  .title {
-    padding-bottom: 50px;
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  @include titlemix;
 
+  #title {
     h2 {
-      padding-bottom: 20px;
-      font-size: 40px;
       color: white;
     }
 
     p {
-      padding-top: 20px;
-      font-size: 16px;
       color: white;
     }
   }
@@ -30,21 +21,9 @@
   form {
     width: 340px;
     height: 400px;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    position: relative;
     padding: 25px 100px 50px 100px;
     margin-bottom: 50px;
+    @include formbase;
 
     input {
       display: block;

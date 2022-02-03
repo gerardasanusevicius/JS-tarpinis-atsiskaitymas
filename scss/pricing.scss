@@ -5,30 +5,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
+
+  @include titlemix;
 
   #title {
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     h2 {
-      padding-bottom: 20px;
-      font-size: 40px;
       color: white;
     }
 
     hr {
       background-color: $green-color;
-      border: none;
-      height: 2px;
-      width: 15%;
     }
 
     p {
-      padding-top: 20px;
-      font-size: 16px;
       color: white;
     }
   }

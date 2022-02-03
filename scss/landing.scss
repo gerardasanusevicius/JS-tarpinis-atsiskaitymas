@@ -63,19 +63,7 @@
   form {
     width: 450px;
     height: 531px;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    position: relative;
+    @include formbase;
 
     h2 {
       background-color: #f5f5f5;

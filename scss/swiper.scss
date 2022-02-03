@@ -1,32 +1,27 @@
 #swipersection {
-  height: 60vh;
+  height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  @include titlemix;
 
   #title {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     h2 {
-      padding-bottom: 20px;
-      font-size: 40px;
       color: black;
     }
 
     hr {
       background-color: $blue-color;
-      border: none;
-      height: 2px;
-      width: 4%;
+      width: 5%;
     }
   }
 
   .swiper {
     max-width: 1400px;
     height: 300px;
+    margin-bottom: 100px;
   }
 
   .swiper-slide {
