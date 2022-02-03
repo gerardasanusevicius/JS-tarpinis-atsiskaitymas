@@ -20,3 +20,19 @@ function changeContent(index,id){
         element.classList.add("transform");
     },100);
 }
+
+// SWIPER JS
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true,
+  speed: 1000,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});

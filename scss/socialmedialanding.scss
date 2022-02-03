@@ -4,8 +4,8 @@
   align-items: center;
   background: white;
   height: 11vh;
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 100px;
+  padding-right: 100px;
 
   h2 {
     padding: 2.5px 0 5px 0;
@@ -14,13 +14,14 @@
   a {
     color: $orange-color;
     text-decoration: none;
-    padding-left: 125px;
+    margin-left: 125px;
     font-size: 30px;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+    opacity: 0.75;
 
     &:hover {
       -webkit-transform: scale(1.2);
@@ -28,10 +29,7 @@
       -ms-transform: scale(1.2);
       -o-transform: scale(1.2);
       transform: scale(1.2);
-    }
-
-    &:last-of-type {
-      opacity: 0.75;
+      opacity: 1;
     }
   }
 }

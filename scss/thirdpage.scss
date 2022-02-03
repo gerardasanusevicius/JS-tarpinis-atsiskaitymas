@@ -3,18 +3,18 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 80vh;
+  height: 100vh;
+  padding-left: 100px;
+  padding-right: 100px;
 
   img {
     width: 30%;
-    padding-left: 150px;
   }
 
   #right {
     width: 35%;
     color: white;
     line-height: 25px;
-    padding-right: 50px;
 
     h2 {
       font-size: 30px;

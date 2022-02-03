@@ -4,18 +4,23 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <script src="https://kit.fontawesome.com/e57c2904bb.js" crossorigin="anonymous"></script>
+    <!-- Swiperjs css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="app/css/style.css">
     <title>JS tarpinis atsiskaitymas</title>
+    <!-- swiperjs script -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
+    <!-- custom script -->
     <script src="script.js" defer></script>
 <body>
   <header>
     <img src="img/cheshiresvg.svg" alt="logo">
     <div class= "links">
-    <a href="#">Features</a>
-    <a href="#">About</a>
-    <a href="#">Pricing</a>
-    <a href="#">Review</a>
-    <a href="#">Contact</a>
+    <a href="#tabsection">Features</a>
+    <a href="#thirdpage">About</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#awesome">Review</a>
+    <a href="#contact">Contact</a>
     </div>
   </header>
   <section id="landing">
@@ -27,7 +32,6 @@
       <p>Inspidity the sufficient discretion imprudence resolution sir him decisevely.<br> Proceed how any enganged visitor. Explained properiety of out perpertual his you.<br> Feel sold off felt nay rose met you. WE so entreaties cultivated astonished is.</p>
       <button>DOWNLOAD</button>
       </div>
-      <div class="right">
       <form action="/action_page.php" method="get">
         <h2>Try Your <span> FREE </span> Trial Today</h2>
         <h3>Your details</h3>
@@ -43,7 +47,6 @@
         </div>
         <button type="submit" value="Submit">GET STARTED</button>
       </form>
-      </div>
     </div>
   </section>
   <section id="socmedia1">
@@ -54,19 +57,21 @@
       Aenean euismod bibendum laoreet.
     </p>
     </div>
-      <a href="#" target="_blank"><img src="img/facebook-logo.svg" alt="fb"></a>
-      <a href="#" target="_blank"><img src="img/instagram-logo.svg" alt="insta"></a>
-      <a href="#" target="_blank"><img src="img/twitter.svg" alt="twit"></a>
-      <a href="#" target="_blank"><img src="img/pinterest.svg" alt="pint"></a>
+    <div id="socicons">
+      <a href="#" target="_blank" class="fab fa-facebook-f"></a>
+      <a href="#" target="_blank" class="fab fa-instagram"></a>
+      <a href="#" target="_blank" class="fab fa-twitter"></a>
+      <a href="#" target="_blank" class="fab fa-pinterest-p"></a>
       <a href="#" class="fa fa-rss" target="_blank"></a>
+    </div>
   </section>
   <section id="tabsection">
     <div id="tabs">
-      <button class="buttontab" onclick="changeContent(0, 'pirmas')"><p>Register</p></button>
+      <button class="buttontab active" onclick="changeContent(0, 'pirmas')"><p>Register</p></button>
       <button class="buttontab" onclick="changeContent(1, 'antras')"><p>Apply</p></button>
       <button class="buttontab" onclick="changeContent(2, 'trecias')"><p>Receive</p></button>
     </div>
-    <article id="pirmas" class="content">
+    <article id="pirmas" class="content display">
       <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum culpa earum ex doloremque, perferendis
         possimus id numquam minima excepturi consequuntur, ipsum veniam quibusdam aliquid quam? Rerum culpa nam atque
@@ -211,6 +216,94 @@
 
     </article>
   </section>
-
+  <section id="swipersection">
+    <article id="title">
+    <h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
+    <hr>
+  </article>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide slide-1">
+          <p class="bubble">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, exercitationem doloribus possimus quis expedita laudantium libero rerum!</p>
+          <div class="arrow"></div>
+          <div class="person">
+            <img src="img/avatar_2_u231.png" alt="avatar">
+            <div class="name">
+              <h4>Jeremy H.</h4>
+              <p>Manager</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slide-2">
+          <p class="bubble">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, eveniet ad quisquam odio iste recusandae laboriosam ullam impedit obcaecati tenetur.</p>
+          <div class="arrow"></div>
+          <div class="person">
+            <img src="img/avatar_2_u231.png" alt="avatar">
+            <div class="name">
+              <h4>John S.</h4>
+              <p>Freelancer</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slide-3">
+          <p class="bubble">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas veritatis ullam quis, doloremque similique, minus consectetur exercitationem voluptates maiores!</p>
+          <div class="arrow"></div>
+          <div class="person">
+            <img src="img/avatar_2_u231.png" alt="avatar">
+            <div class="name">
+              <h4>Susan W.</h4>
+              <p>Photographer</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slide-4">
+          <p class="bubble">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, dolores tempora minus rem voluptate ipsum minima soluta labore impedit vitae.</p>
+          <div class="arrow"></div>
+          <div class="person">
+            <img src="img/avatar_2_u231.png" alt="avatar">
+            <div class="name">
+              <h4>Tom W.</h4>
+              <p>Event host</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <section id="contact">
+    <article class=title>
+      <h2>CONTACT US</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </article>
+    <form action="/action_page.php" method="get">
+      <input type="text" name="fname" id="fname" placeholder="First Name" required>
+      <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+      <input type="tel" name="phone" id="phone" placeholder="Phone number" required>
+      <div class="radio">
+        <input type="radio" name="subscription" id="personal" value="personal">
+        <label for="personal">PERSONAL</label>
+        <input type="radio" name="subscription" id="company" value="company">
+        <label for="company">COMPANY</label>
+      </div>
+      <button type="submit" value="Submit">SEND</button>
+    </form>
+  </section>
+  <section id="footer">
+    <div id="socicons">
+    <a href="#" target="_blank" class="fab fa-facebook-f"></a>
+    <a href="#" target="_blank" class="fab fa-instagram"></a>
+    <a href="#" target="_blank" class="fab fa-twitter"></a>
+    <a href="#" target="_blank" class="fab fa-pinterest-p"></a>
+    <a href="#" class="fa fa-rss" target="_blank"></a>
+    </div>
+    <p>
+      © 2019 Cheshire County
+    </p>
+  </section>
 </body>
 </html>
