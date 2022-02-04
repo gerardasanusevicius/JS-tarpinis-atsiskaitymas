@@ -1,7 +1,7 @@
 #landing {
   background: url("../../img/citybackground.png");
   max-width: 100%;
-  height: 82vh;
+  // height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -9,11 +9,14 @@
 
   .overlaycontainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     background-color: rgba(28, 28, 28, 0.63);
-    max-width: 100%;
-    height: 60vh;
-    padding: 200px 50px 200px 50px;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    // height: 80vh;
   }
 
   .left {
@@ -25,7 +28,7 @@
 
     h1 {
       font-size: 36px;
-      width: 450px;
+      width: 80%;
       padding-top: 25px;
       padding-bottom: 25px;
     }
@@ -61,7 +64,7 @@
   }
 
   form {
-    width: 450px;
+    max-width: 450px;
     height: 531px;
     @include formbase;
 

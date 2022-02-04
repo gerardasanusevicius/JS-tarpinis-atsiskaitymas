@@ -3,33 +3,15 @@
   justify-content: space-around;
   align-items: center;
   background: #1c1c1c;
-  height: 11vh;
-  padding-right: 100px;
+  padding: 35px 100px 35px 0px;
 
   p {
     color: $grey-color;
     font-size: 18px;
+    margin-left: 15px;
   }
 
   #socicons {
-    a {
-      color: $orange-color;
-      text-decoration: none;
-      margin-left: 125px;
-      font-size: 30px;
-      -webkit-transition: 0.3s;
-      -moz-transition: 0.3s;
-      -ms-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s;
-
-      &:hover {
-        -webkit-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        -o-transform: scale(1.2);
-        transform: scale(1.2);
-      }
-    }
+    @include socmix;
   }
 }

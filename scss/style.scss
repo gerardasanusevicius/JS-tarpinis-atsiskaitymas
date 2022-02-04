@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: montserrat;
 }
@@ -20,3 +24,4 @@ body {
 @import "swiper.scss";
 @import "contact.scss";
 @import "footer.scss";
+@import "media.scss";

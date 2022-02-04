@@ -1,0 +1,105 @@
+@media (max-width: 480px) {
+  header .left {
+    width: 60%;
+  }
+  #awesome {
+    #points {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      .point {
+        width: 80%;
+        padding-top: 25px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  header {
+    #top-menu {
+      display: none;
+    }
+    #burger {
+      display: block;
+    }
+  }
+}
+@media (min-width: 768px) {
+  header #side-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 1280px) {
+  #landing {
+    flex-direction: column;
+
+    .left {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    form {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+  #thirdpage {
+    flex-direction: column;
+    padding: 25px;
+
+    img {
+      width: 80%;
+    }
+
+    #right {
+      width: 80%;
+    }
+  }
+
+  #awesome {
+    padding: 50px 25px;
+  }
+
+  #pricing {
+    padding: 25px 25px;
+    #options {
+      flex-direction: column;
+    }
+    #title {
+      padding-bottom: 25px;
+    }
+  }
+  #contact {
+    padding: 25px 25px;
+  }
+
+  #swipersection {
+    .swiper {
+      max-width: 600px;
+
+      // .arrow {
+      //   top: 230px;
+      //   left: 25px;
+      // }
+    }
+  }
+
+  #tabsection {
+    flex-direction: column;
+    padding: 50px;
+
+    .content {
+      margin-left: 15px;
+      margin-bottom: 15px;
+    }
+
+    #tabs {
+      flex-direction: row;
+    }
+  }
+}

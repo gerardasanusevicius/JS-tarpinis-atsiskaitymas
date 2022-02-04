@@ -1,6 +1,5 @@
 #contact {
   background: $orange-color;
-  height: 82vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,12 +8,16 @@
   @include titlemix;
 
   #title {
+    padding-bottom: 50px;
     h2 {
       color: white;
+      padding-bottom: 25px;
+      padding-top: 25px;
     }
 
     p {
       color: white;
+      padding-top: 25px;
     }
   }
 
